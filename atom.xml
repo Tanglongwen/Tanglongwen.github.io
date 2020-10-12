@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Tanglongwen.github.io</id>
-    <title>Tatoo Blog</title>
-    <updated>2020-10-12T15:37:19.310Z</updated>
+    <title>Tatoo&apos;s Blog</title>
+    <updated>2020-10-12T16:22:04.808Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Tanglongwen.github.io"/>
     <link rel="self" href="https://Tanglongwen.github.io/atom.xml"/>
+    <subtitle>🙋🏻‍♂️Welcome to my blog, I am here to record my life -- to leave this fucking place</subtitle>
     <logo>https://Tanglongwen.github.io/images/avatar.png</logo>
     <icon>https://Tanglongwen.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Tatoo Blog</rights>
+    <rights>All rights reserved 2020, Tatoo&apos;s Blog</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://Tanglongwen.github.io/post/hello-gridea/</id>
