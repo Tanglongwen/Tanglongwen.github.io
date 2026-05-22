@@ -759,10 +759,18 @@ h1 {
   }
 
   .checkout-panel {
-    grid-template-columns: 1fr;
+    display: block;
     gap: 22px;
-    padding: 22px;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
     overflow: hidden;
+  }
+
+  .checkout-copy {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .checkout-copy p {
@@ -770,14 +778,19 @@ h1 {
   }
 
   .checkout-box {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "summary"
-      "price"
-      "methods"
-      "qr"
-      "note";
-    padding: 18px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    overflow: hidden;
+  }
+
+  .order-summary,
+  .order-price,
+  .payment-methods,
+  .pay-preview {
+    width: 100%;
+    max-width: 100%;
   }
 
   .plan-grid {
@@ -789,13 +802,32 @@ h1 {
   }
 
   .payment-methods {
+    display: grid;
     grid-template-columns: 1fr;
+    margin: 18px 0;
+  }
+
+  .pay-method {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .pay-preview {
+    display: block;
+    padding: 12px;
   }
 
   .qr-frame {
-    width: min(100%, 300px);
+    width: min(100%, 280px);
+    max-width: calc(100vw - 96px);
     min-height: 0;
     aspect-ratio: 1 / 1;
+  }
+
+  .qr-frame img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
   }
 
   .site-footer {
@@ -840,7 +872,7 @@ h1 {
   }
 
   .checkout-box {
-    padding: 16px;
+    padding: 12px;
   }
 
   .order-summary,
@@ -855,7 +887,8 @@ h1 {
   }
 
   .qr-frame {
-    width: min(100%, 280px);
+    width: min(100%, 248px);
+    max-width: calc(100vw - 84px);
     min-height: 0;
     aspect-ratio: 1 / 1;
   }
