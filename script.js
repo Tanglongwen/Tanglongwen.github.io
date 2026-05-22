@@ -45,7 +45,6 @@ const selectedPrice = document.getElementById("selectedPrice");
 const payTitle = document.getElementById("payTitle");
 const payDescription = document.getElementById("payDescription");
 const payQrImage = document.getElementById("payQrImage");
-const payButton = document.getElementById("payButton");
 const toast = document.getElementById("toast");
 
 function updateCheckout() {
@@ -59,7 +58,6 @@ function updateCheckout() {
   payDescription.textContent = payment.description;
   payQrImage.src = payment.image;
   payQrImage.alt = payment.alt;
-  payButton.textContent = `确认支付 ${price}`;
 }
 
 function updatePlanCards() {
@@ -109,12 +107,6 @@ payMethods.forEach((button) => {
     updatePaymentButtons();
     updateCheckout();
   });
-});
-
-payButton.addEventListener("click", () => {
-  const plan = plans[selectedPlan];
-  const paymentName = selectedPay === "alipay" ? "支付宝" : "微信支付";
-  showToast(`已选择 ${plan.name}，金额 ${formatCurrency(plan.price)}。请接入${paymentName}商户接口完成真实支付。`);
 });
 
 updateCheckout();
