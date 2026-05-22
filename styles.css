@@ -151,6 +151,19 @@ a {
   color: var(--muted);
 }
 
+.hero-kicker {
+  display: inline-flex;
+  margin-bottom: 16px;
+  font-size: clamp(20px, 2.4vw, 34px);
+  font-weight: 850;
+  line-height: 1.1;
+  background: linear-gradient(120deg, #b68a35 0%, #f7d991 30%, #0071e3 68%, #5e5ce6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 12px 34px rgba(182, 138, 53, 0.22);
+}
+
 h1,
 h2,
 h3,
