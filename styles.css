@@ -509,7 +509,6 @@ h1 {
     "summary qr"
     "price qr"
     "methods qr"
-    "button qr"
     "note note";
   column-gap: 22px;
   row-gap: 0;
@@ -648,13 +647,6 @@ h1 {
   border-radius: 5px;
 }
 
-.pay-button {
-  grid-area: button;
-  width: 100%;
-  margin-top: 18px;
-  font-weight: 750;
-}
-
 .pay-note {
   grid-area: note;
   margin: 12px 0 0;
@@ -713,28 +705,45 @@ h1 {
 
 @media (max-width: 760px) {
   .site-header {
+    height: auto;
+    min-height: 52px;
     padding: 0 16px;
+  }
+
+  .brand {
+    flex: 0 0 auto;
   }
 
   .site-nav {
     gap: 12px;
+    overflow-x: auto;
+    padding: 14px 0;
+    white-space: nowrap;
   }
 
   .hero {
-    min-height: 520px;
+    min-height: 560px;
   }
 
   .hero-content {
-    padding: 58px 0 48px;
+    width: min(100% - 28px, 1180px);
+    padding: 56px 0 46px;
+  }
+
+  .hero-kicker {
+    max-width: 100%;
+    font-size: clamp(36px, 10.5vw, 50px);
+    line-height: 1.08;
   }
 
   .section {
     width: min(100% - 28px, 1180px);
-    padding: 62px 0;
+    padding: 56px 0;
   }
 
   .intro {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .checkout-box {
@@ -744,12 +753,8 @@ h1 {
       "price"
       "methods"
       "qr"
-      "button"
       "note";
-  }
-
-  .intro {
-    gap: 22px;
+    padding: 18px;
   }
 
   .plan-grid {
@@ -765,8 +770,8 @@ h1 {
   }
 
   .qr-frame {
-    width: min(100%, 320px);
-    min-height: 320px;
+    width: min(100%, 300px);
+    min-height: 300px;
   }
 
   .site-footer {
@@ -784,15 +789,49 @@ h1 {
   }
 
   h1 {
-    font-size: 40px;
-    max-width: 340px;
+    font-size: 36px;
+    max-width: 100%;
+  }
+
+  .hero-kicker {
+    font-size: clamp(32px, 11vw, 42px);
+  }
+
+  .hero-copy {
+    font-size: 17px;
+  }
+
+  .intro h2,
+  .section-title h2,
+  .checkout-copy h2 {
+    font-size: 32px;
+  }
+
+  .section-title {
+    align-items: flex-start;
+  }
+
+  .comparison-table {
+    min-width: 760px;
   }
 
   .checkout-box {
     padding: 16px;
   }
 
+  .order-summary,
+  .order-price {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
   .pay-preview {
     align-items: center;
+  }
+
+  .qr-frame {
+    width: min(100%, 280px);
+    min-height: 280px;
   }
 }
