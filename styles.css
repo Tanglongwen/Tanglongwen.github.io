@@ -154,7 +154,7 @@ a {
 .hero-kicker {
   display: inline-flex;
   margin-bottom: 16px;
-  font-size: clamp(20px, 2.4vw, 34px);
+  font-size: clamp(50px, 5vw, 64px);
   font-weight: 850;
   line-height: 1.1;
   background: linear-gradient(120deg, #b68a35 0%, #f7d991 30%, #0071e3 68%, #5e5ce6 100%);
