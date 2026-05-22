@@ -893,3 +893,61 @@ h1 {
     aspect-ratio: 1 / 1;
   }
 }
+
+@media (max-width: 760px) {
+  body,
+  main,
+  .checkout-section,
+  .checkout-panel,
+  .checkout-copy,
+  .checkout-box,
+  .pay-preview {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .checkout-section {
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .checkout-panel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 18px 14px;
+  }
+
+  .checkout-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 14px;
+  }
+
+  .pay-preview {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .qr-frame {
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    width: min(100%, 260px);
+    max-width: calc(100vw - 84px);
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
+  }
+
+  .qr-frame img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
